@@ -1,11 +1,12 @@
 {
-  "name": "sprite-template",
+  "name": "@spritejs/gesture",
   "version": "0.0.1",
-  "description": "The standard project template.",
+  "description": "Recogonize gestures on mobile phones.",
   "main": "index.js",
   "scripts": {
     "start": "webpack-dev-server --env.server=examples --watch-poll",
     "compile": "webpack --env.production=true",
+    "lint": "eslint src --fix",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],

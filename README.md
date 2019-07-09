@@ -1,3 +1,3 @@
-# Sprite Template
+# Sprite Gesture
 
-The standard project template.
+SpriteJS Gesture extension based on [winter-gestures](https://github.com/wintercn/gesture).

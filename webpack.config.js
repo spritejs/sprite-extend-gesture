@@ -1,6 +1,5 @@
 const webpack = require('webpack');
 const path = require('path');
-const packageConfig = require('./package.json');
 
 function toCamelCase(str) {
   return str.replace(/-([a-z])/ig, (s, p1) => p1.toUpperCase());
@@ -12,9 +11,9 @@ module.exports = function (env = {}) {
     entry: './src/index',
     output: {
       path: path.resolve(__dirname, 'dist'),
-      filename: `${packageConfig.name}.js`,
+      filename: `sprite-extend-gesture.js`,
       publicPath: '/js/',
-      library: [toCamelCase(packageConfig.name)],
+      library: 'spriteGesture',
       libraryTarget: 'umd',
       libraryExport: 'default',
     },
